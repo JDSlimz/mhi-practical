@@ -1,0 +1,24 @@
+#homeBtn{
+    margin-right: 20px;
+}
+
+#employeeInfoCard{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 10px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.mat-mdc-card-image{
+    width: 20%;
+}
+
+.mat-mdc-card-content{
+    width: 60%;
+}
+
+#employeeInfoTable{
+    width: 80%;
+}

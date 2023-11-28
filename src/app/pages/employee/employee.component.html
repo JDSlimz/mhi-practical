@@ -1,0 +1,32 @@
+<mat-toolbar>
+    <button id="homeBtn" mat-icon-button color="primary" (click)="goHome()">
+        <mat-icon>home</mat-icon>
+    </button>
+    <span *ngIf="selectedEmployee">Employee Information</span>
+    <span *ngIf="!selectedEmployee">Invalid Employee</span>
+</mat-toolbar>
+
+<mat-card id="employeeInfoCard" *ngIf="selectedEmployee">
+    <img mat-card-image [src]="selectedEmployee.profile_image || '../../../assets/img/user-placeholder.png'">
+    <mat-card-content>
+        <table id="employeeInfoTable">
+            <tr>
+                <td><strong>ID: </strong></td>
+                <td>{{selectedEmployee.id}}</td>
+            </tr>
+            <tr>
+                <td><strong>Name: </strong></td>
+                <td>{{selectedEmployee.employee_name}}</td>
+            </tr>
+            <tr>
+                <td><strong>Age: </strong></td>
+                <td>{{selectedEmployee.employee_age}}</td>
+            </tr>
+            <tr>
+                <td><strong>Salary: </strong></td>
+                <td>{{selectedEmployee.employee_salary}}</td>
+            </tr>
+        </table>
+    </mat-card-content>
+</mat-card>
+  

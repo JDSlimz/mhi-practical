@@ -1,0 +1,56 @@
+.mat-toolbar-single-row{
+    margin-bottom: 20px;
+}
+
+.mat-mdc-table{
+    table-layout:fixed;
+}
+
+.mat-mdc-row{
+    cursor: pointer;
+}
+
+.mat-mdc-row:hover {
+    font-weight: bold;
+    color: rgb(70, 150, 253);
+}
+
+td::after {
+    display: block;
+    content: attr(title);
+    font-weight: 600;
+    color: transparent;
+    height: 1px;
+    margin-bottom: -1px;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+::ng-deep .mat-mdc-form-field-subscript-wrapper{
+    display: none;
+}
+
+#idSearch{
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+#idSearch .mat-mdc-form-field{
+  width: 25%;
+  margin-right: 10px;
+}
+
+#tableFilter{
+    width: 100%;
+}
+
+.mat-elevation-z8{
+    display: block;
+    width: 80%;
+    margin: 0px auto;
+}
+
+::ng-deep .snackbar-error .mdc-snackbar__surface {
+    background-color: rgb(250, 53, 53) !important;
+}
